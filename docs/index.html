@@ -46,6 +46,9 @@
 		window.onload = function () {
 			const context = new AudioContext();
 			audio = new Audio('cease.wav');
+			try {
+				audio.play();
+			} catch (e) { }
 		}
 	</script>
 </head>
