@@ -39,13 +39,19 @@
 			}
 		}
 	</style>
+
+	<!-- this life -->
+	<script>
+		window.onload = function () {
+			document.getElementById("why").play();
+		}
+	</script>
 </head>
 
 <body style="font-family: 'Afacad Flux'; background-color: #111;">
-	<iframe width="1%" height="1%" scrolling="no" frameborder="no" allow="autoplay"
-		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1929338852%3Fsecret_token%3Ds-uuv9nOVkJ34&color=%23000000&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"
-		style="position: absolute;">
-	</iframe>
+	<audio controls id="why" style="display: none;">
+		<source src="cease.wav">
+	</audio>
 	<div class="stars"></div>
 	<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;">
 		<img src="ceased.png" style="max-width: 384px;">
