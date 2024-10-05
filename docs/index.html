@@ -42,12 +42,10 @@
 
 	<!-- this life -->
 	<script>
+		var audio = null;
 		window.onload = function () {
 			const context = new AudioContext();
-			const audio = new Audio('cease.wav');
-			audio.addEventListener("canplaythrough", (e) => {
-				audio.play();
-			});
+			audio = new Audio('cease.wav');
 		}
 	</script>
 </head>
@@ -57,7 +55,8 @@
 	<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;">
 		<img src="ceased.png" style="max-width: 384px;">
 		<br>
-		<a href="https://discord.gg/tYFstqd7jE" target="_blank" style="font-size: 2rem; color: white;">
+		<a href="https://discord.gg/tYFstqd7jE" target="_blank" onmousedown="audio.play()"
+			style="font-size: 2rem; color: white;">
 			<b>We've been waiting for you, friend~</b><i class="fa-brands fa-discord" style="margin-left: 1rem;"></i>
 		</a>
 	</div>
